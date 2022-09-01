@@ -42,9 +42,12 @@ class AddComment extends Component {
                 console.log(data);
                 this.setState(
                     {
-                        comment: '',
-                        rate: 1,
-                        elementId: this.props.asin
+                        comments: {
+                            comment: '',
+                            rate: 1,
+                            elementId: this.props.asin
+                        }
+                        
                     }
                 );
             } else {
